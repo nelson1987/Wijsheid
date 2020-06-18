@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_UI", "0_UI", "{C628A9B6-1023-440A-9F98-43AFEA6DD741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Api", "1_Api", "{FC500B0C-6CA3-43F2-B4F0-81930B6B9C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Api", "Wijsheid.Api\Wijsheid.Api.csproj", "{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{795FE6B0-1F04-4E9D-91D5-BA0D9ADCB682} = {FC500B0C-6CA3-43F2-B4F0-81930B6B9C05}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0E1FB45-7B05-47E8-BD4B-6D57D56554C7}
+	EndGlobalSection
+EndGlobal
