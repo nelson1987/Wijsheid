@@ -2,7 +2,7 @@
 
 namespace WijSheid.Application.Models
 {
-    public  class AlunoCriacaoDto
+    public class AlunoCriacaoDto
     {
         [Required]
         public string Nome { get; set; }

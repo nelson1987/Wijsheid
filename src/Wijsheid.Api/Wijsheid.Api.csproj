@@ -17,4 +17,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wijsheid.Application.Contracts\Wijsheid.Application.Contracts.csproj" />
+    <ProjectReference Include="..\WijSheid.Application.Models\WijSheid.Application.Models.csproj" />
+  </ItemGroup>
+
 </Project>

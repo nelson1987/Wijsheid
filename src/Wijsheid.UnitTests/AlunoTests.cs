@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Wijsheid.Domain;
 
 namespace Tests
 {
@@ -11,9 +12,26 @@ namespace Tests
         }
 
         [Test]
-        public void Test1()
+        public void ValidarNomeNulo()
         {
-            Assert.Pass();
+            Aluno aluno = new Aluno();
+            Assert.IsFalse(aluno.IsValid());
+        }
+
+        [Test]
+        public void ValidarNomeVazio()
+        {
+            Aluno aluno = new Aluno();
+            aluno.Nome = "";
+            Assert.IsFalse(aluno.IsValid());
+        }
+
+        [Test]
+        public void ValidarNomeComEspacoEmBranco()
+        {
+            Aluno aluno = new Aluno();
+            aluno.Nome = " ";
+            Assert.IsFalse(aluno.IsValid());
         }
     }
 }

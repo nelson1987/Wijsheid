@@ -1,7 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wijsheid.Application.Contracts\Wijsheid.Application.Contracts.csproj" />
+    <ProjectReference Include="..\WijSheid.Application.Models\WijSheid.Application.Models.csproj" />
+    <ProjectReference Include="..\Wijsheid.Domain\Wijsheid.Domain.csproj" />
+  </ItemGroup>
 
 </Project>
