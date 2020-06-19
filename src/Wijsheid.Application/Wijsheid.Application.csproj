@@ -12,6 +12,7 @@
     <ProjectReference Include="..\Wijsheid.Application.Contracts\Wijsheid.Application.Contracts.csproj" />
     <ProjectReference Include="..\WijSheid.Application.Models\WijSheid.Application.Models.csproj" />
     <ProjectReference Include="..\Wijsheid.Domain\Wijsheid.Domain.csproj" />
+    <ProjectReference Include="..\Wijsheid.Service.Contracts\Wijsheid.Service.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

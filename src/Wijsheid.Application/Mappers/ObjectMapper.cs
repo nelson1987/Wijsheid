@@ -19,8 +19,8 @@ namespace Wijsheid.Application.Mappers
             {
                 return new MapperConfiguration(cfg =>
                 {
-                    cfg.CreateMap<AlunoListagemDto, Aluno>();
-                    cfg.CreateMap<Aluno, AlunoCriacaoDto>();
+                    cfg.CreateMap<Aluno, AlunoListagemDto>();
+                    cfg.CreateMap<AlunoCriacaoDto, Aluno>();
                 });
             }
         }

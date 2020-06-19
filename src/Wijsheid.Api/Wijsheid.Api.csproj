@@ -15,11 +15,13 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Wijsheid.Application.Contracts\Wijsheid.Application.Contracts.csproj" />
     <ProjectReference Include="..\WijSheid.Application.Models\WijSheid.Application.Models.csproj" />
+    <ProjectReference Include="..\Wijsheid.Crosscutting\Wijsheid.Crosscutting.csproj" />
   </ItemGroup>
 
 </Project>

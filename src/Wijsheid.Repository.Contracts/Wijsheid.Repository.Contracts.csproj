@@ -5,9 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Wijsheid.Domain\Wijsheid.Domain.csproj" />
-    <ProjectReference Include="..\Wijsheid.Repository.Contracts\Wijsheid.Repository.Contracts.csproj" />
-    <ProjectReference Include="..\Wijsheid.Service.Contracts\Wijsheid.Service.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

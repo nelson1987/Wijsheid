@@ -29,6 +29,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Service", "Wijshei
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Application.Contracts", "Wijsheid.Application.Contracts\Wijsheid.Application.Contracts.csproj", "{B8D4D8D0-AC07-4D15-B64A-07EA853DB43A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Service.Contracts", "Wijsheid.Service.Contracts\Wijsheid.Service.Contracts.csproj", "{EE507A17-71B8-4157-A406-C0A27FE8EDCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_Repository", "5_Repository", "{807CF060-3DDA-4AE0-B061-553ABD78484E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Repository", "Wijsheid.Repository\Wijsheid.Repository.csproj", "{AA733734-6B27-4305-9457-BC2DEC3C9FA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8_Crosscutting", "8_Crosscutting", "{0485DC07-54CD-4DBB-A6B9-BEC38D426A85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Crosscutting", "Wijsheid.Crosscutting\Wijsheid.Crosscutting.csproj", "{7041A338-283F-4988-A1C2-5A590DEDC123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wijsheid.Repository.Contracts", "Wijsheid.Repository.Contracts\Wijsheid.Repository.Contracts.csproj", "{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +75,22 @@ Global
 		{B8D4D8D0-AC07-4D15-B64A-07EA853DB43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D4D8D0-AC07-4D15-B64A-07EA853DB43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8D4D8D0-AC07-4D15-B64A-07EA853DB43A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE507A17-71B8-4157-A406-C0A27FE8EDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE507A17-71B8-4157-A406-C0A27FE8EDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE507A17-71B8-4157-A406-C0A27FE8EDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE507A17-71B8-4157-A406-C0A27FE8EDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA733734-6B27-4305-9457-BC2DEC3C9FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA733734-6B27-4305-9457-BC2DEC3C9FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA733734-6B27-4305-9457-BC2DEC3C9FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA733734-6B27-4305-9457-BC2DEC3C9FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7041A338-283F-4988-A1C2-5A590DEDC123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7041A338-283F-4988-A1C2-5A590DEDC123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7041A338-283F-4988-A1C2-5A590DEDC123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7041A338-283F-4988-A1C2-5A590DEDC123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +103,10 @@ Global
 		{8104D50A-4AA1-49A9-B48F-1010CFEAB10C} = {8F4D7FD6-6B09-4475-9685-0705175EF8EE}
 		{D85374C8-3AFD-4FEB-8234-833A305D7445} = {D58D6D9B-273F-4253-9F05-0F31FF76D8E9}
 		{B8D4D8D0-AC07-4D15-B64A-07EA853DB43A} = {8F4D7FD6-6B09-4475-9685-0705175EF8EE}
+		{EE507A17-71B8-4157-A406-C0A27FE8EDCA} = {D58D6D9B-273F-4253-9F05-0F31FF76D8E9}
+		{AA733734-6B27-4305-9457-BC2DEC3C9FA2} = {807CF060-3DDA-4AE0-B061-553ABD78484E}
+		{7041A338-283F-4988-A1C2-5A590DEDC123} = {0485DC07-54CD-4DBB-A6B9-BEC38D426A85}
+		{9DAD8F7E-EABB-4EBD-80EE-CDCA2407DCE5} = {807CF060-3DDA-4AE0-B061-553ABD78484E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0E1FB45-7B05-47E8-BD4B-6D57D56554C7}

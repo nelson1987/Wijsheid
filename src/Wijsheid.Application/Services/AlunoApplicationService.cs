@@ -2,16 +2,23 @@
 using Wijsheid.Application.Contracts.Interfaces;
 using Wijsheid.Application.Mappers;
 using Wijsheid.Domain;
+using Wijsheid.Service.Contracts.Interfaces;
 using WijSheid.Application.Models;
 
 namespace Wijsheid.Application.Services
 {
     public class AlunoApplicationService : IAlunoApplicationService
     {
+        public AlunoApplicationService(IAlunoService servico)
+        {
+            _servico = servico;
+        }
+
+        private IAlunoService _servico { get; set; }
+        
         public List<AlunoListagemDto> Listar()
         {
-            List<Aluno> c1 = new List<Aluno>();
-            List<AlunoListagemDto> c2 = ObjectMapper.Mapper.Map<List<AlunoListagemDto>>(c1);
+            List<AlunoListagemDto> c2 = ObjectMapper.Mapper.Map<List<AlunoListagemDto>>(_servico.Get());
             return c2;
         }
 
