@@ -34,9 +34,9 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY ["Wijsheid.Api/Wijsheid.Api.csproj", "Wijsheid.Api/"]
-COPY ["WijSheid.Application.Models/WijSheid.Application.Models.csproj", "WijSheid.Application.Models/"]
-COPY ["Wijsheid.Application.Contracts/Wijsheid.Application.Contracts.csproj", "Wijsheid.Application.Contracts/"]
+COPY ["Wijsheid.Api/Wijsheid.Api.csproj", "Wijsheid.Api"]
+COPY ["WijSheid.Application.Models/WijSheid.Application.Models.csproj", "WijSheid.Application.Models"]
+COPY ["Wijsheid.Application.Contracts/Wijsheid.Application.Contracts.csproj", "Wijsheid.Application.Contracts"]
 COPY ["Wijsheid.Crosscutting/Wijsheid.Crosscutting.csproj", "Wijsheid.Crosscutting/"]
 COPY ["Wijsheid.Service/Wijsheid.Service.csproj", "Wijsheid.Service/"]
 COPY ["Wijsheid.Repository.Contracts/Wijsheid.Repository.Contracts.csproj", "Wijsheid.Repository.Contracts/"]
