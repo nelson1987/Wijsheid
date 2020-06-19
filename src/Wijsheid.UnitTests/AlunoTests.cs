@@ -33,11 +33,5 @@ namespace Tests
             aluno.Nome = " ";
             Assert.IsFalse(aluno.IsValid());
         }
-
-        [Test]
-        public void TesteDeBuild()
-        {
-            Assert.Fail("ERRO");
-        }
     }
 }
