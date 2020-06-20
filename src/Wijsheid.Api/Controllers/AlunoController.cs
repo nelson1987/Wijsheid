@@ -6,25 +6,66 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace Wijsheid.Api.Controllers
 {
+    /*
+     * 200 - Sucesso
+     * 400 - Requisição inválida
+     * 401 - Não Autorizado(Autenticação)
+     * 404 - Não encontrado
+     * 500 - Erro de Aplicação
+     */
+    [EnableCors("DefaultPolicy")]
     [Route("api/[controller]")]
     [Produces("application/json")]
     [ApiController]
+    [Authorize("Bearer")]
     public class AlunoController : ControllerBase
     {
         // GET api/aluno
         [HttpGet]
-        public ActionResult<IEnumerable<AlunoListagemDto>> Get([FromServices] IAlunoApplicationService application)
+        [Route("Consultar")]
+        [ProducesResponseType(typeof(IEnumerable<AlunoListagemDto>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotImplemented)]
+        public IActionResult<IEnumerable<AlunoListagemDto>> Get([FromServices] IAlunoApplicationService application)
         {
-            return application.Listar();
+            try
+            {
+                var fundos = fundoApplication.Listar();
+                return Ok(application.Listar());
+            }
+            catch (Exception)
+            {
+                //TODO: Logar a exception
+                return BadRequest("Erro ao listar Fundos.");
+            }
         }
 
         // POST api/aluno
         [HttpPost]
-        public void Post([FromServices] IAlunoApplicationService application,
+        [Route("Cadastrar")]
+        [ProducesResponseType(200)] //OK
+        [ProducesResponseType(400)] //Requisição inválida
+        [ProducesResponseType(500)] //Erro interno de servidor
+        public ActionResult Post([FromServices] IAlunoApplicationService application,
                         [FromBody]AlunoCriacaoDto aluno)
         {
+            //if (ModelState.IsValid)
+            //    application.Criar(aluno);
             if (ModelState.IsValid)
-                application.Criar(aluno);
+            {
+                try
+                {
+                    application.Criar(aluno);
+                    return Ok($"Aluno {aluno.Nome}, cadastrado com sucesso.");
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(500, e.Message);
+                }
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
     }
 }
