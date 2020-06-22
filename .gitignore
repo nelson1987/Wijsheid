@@ -59,16 +59,16 @@ project.xcworkspace
 # Android/IntelliJ
 #
 build/
-.idea
-.gradle
+*.idea
+*.gradle
 local.properties
 *.iml
 
 # node.js
 #
 node_modules/
-npm-debug.log
-yarn-error.log
+*npm-debug.log
+*yarn-error.log
 
 # BUCK
 buck-out/
@@ -93,5 +93,5 @@ buck-out/
 /ios/Pods/
 
 # Expo
-.expo/*
+.expo/
 web-build/
