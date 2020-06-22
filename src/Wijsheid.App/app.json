@@ -1,0 +1,17 @@
+{
+  "name": "Wijsheid.App",
+  "displayName": "Wijsheid.App",
+  "expo": {
+    "name": "Wijsheid.App",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
