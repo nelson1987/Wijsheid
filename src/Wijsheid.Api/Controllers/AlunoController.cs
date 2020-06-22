@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using WijSheid.Application.Models;
 using Wijsheid.Application.Contracts.Interfaces;
-using Microsoft.AspNetCore.Mvc.Formatters;
+using WijSheid.Application.Models;
 
 namespace Wijsheid.Api.Controllers
 {
