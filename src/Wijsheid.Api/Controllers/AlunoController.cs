@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using WijSheid.Application.Models;
 using Wijsheid.Application.Contracts.Interfaces;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
+using System.Net;
+using System;
 
 namespace Wijsheid.Api.Controllers
 {
@@ -25,11 +29,11 @@ namespace Wijsheid.Api.Controllers
         [Route("Consultar")]
         [ProducesResponseType(typeof(IEnumerable<AlunoListagemDto>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotImplemented)]
-        public IActionResult<IEnumerable<AlunoListagemDto>> Get([FromServices] IAlunoApplicationService application)
+        public ActionResult<IEnumerable<AlunoListagemDto>> Get([FromServices] IAlunoApplicationService application)
         {
             try
             {
-                var fundos = fundoApplication.Listar();
+                var fundos = application.Listar();
                 return Ok(application.Listar());
             }
             catch (Exception)
