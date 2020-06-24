@@ -15,9 +15,6 @@ namespace Wijsheid.Crosscutting
             services.AddScoped<IAlunoApplicationService, AlunoApplicationService>();
             services.AddScoped<IAlunoService, AlunoService>();
             services.AddScoped<IAlunoRepository, AlunoRepository>();
-            //services.AddScoped<IKeyVaultCache, KeyVaultCache>();
-            //services.AddScoped<IBlobStorageToken, BlobStorageToken>();
-            //services.AddScoped<IBlobWriter, BlobWriter>();
             return services;
         }
     }
