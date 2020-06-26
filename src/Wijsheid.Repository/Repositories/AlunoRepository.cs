@@ -8,8 +8,6 @@ namespace Wijsheid.Repository.Repositories
     {
         public IList<Aluno> GetAll()
         {
-
-            //IList<T> Get();
             throw new System.NotImplementedException();
         }
     }
